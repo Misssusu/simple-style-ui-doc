@@ -1,5 +1,7 @@
 <template>
-  
+  <div>
+    <s-input v-model="input" clearable placeholder="Please enter content"></s-input>
+  </div>
 </template>
 
 <script>
@@ -9,7 +11,12 @@
 
   Vue.use(SUI)
   export default {
-    name: 'input-demo-1'
+    name: 'input-demo1',
+    data(){
+      return {
+        input: ''
+      }
+    }
   };
 </script>
 
